@@ -151,6 +151,18 @@ season_avgs <- historical_cutoff %>%
   group_by(athlete_display_name) %>%
   summarise(Season_PTS = mean(points))
 
+# FETCH INJURY REPORT 
+cat("Fetching injury report...\n")
+# Fetch the ESPN injury report
+injury_report <- hoopR::espn_nba_injuries() %>%
+  # Filter for players listed as "Out" or likely to miss
+  filter(grepl("Out|Injured|Surgery", status, ignore.case = TRUE)) %>% 
+  select(athlete_display_name = athlete_name) %>%
+  distinct()
+
+cat(paste("Found", nrow(injury_report), "injured players to exclude.\n"))
+
+
 # Build prediction dataset for players in today's games
 predict_input <- latest_info %>%
   inner_join(current_form, by = "athlete_display_name") %>%
@@ -176,7 +188,8 @@ predict_input <- latest_info %>%
   select(-join_date) %>%
   mutate(opponent = as.factor(opponent), Pos = as.factor(Pos), Missing_Production = 0) %>%
   filter(opponent %in% levels(train_data$opponent),
-         L5_Mins >= MIN_AVG_MINUTES) %>%
+         L5_Mins >= MIN_AVG_MINUTES,
+         !athlete_display_name %in% injury_report$athlete_display_name) %>%
   ungroup()
 
 # Generate predictions

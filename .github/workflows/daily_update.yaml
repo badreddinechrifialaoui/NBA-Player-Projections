@@ -1,0 +1,38 @@
+name: NBA Daily Projections Update
+
+
+on:
+  schedule:
+    - cron: '0 10 * * *'  # 10:00 AM UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Setup R
+        uses: r-lib/actions/setup-r@v2
+        with:
+          r-version: '4.3.1'
+      - name: Install R Dependencies
+        run: |
+          install.packages("pacman")
+          library(pacman)
+          p_load(hoopR, dplyr, tidyr, lubridate, knitr, writexl, stringr, ranger, zoo, tibble, rvest)
+        shell: Rscript {0}
+      - name: Run NBA Projections Script
+        run: Rscript "NBA Projections.R"
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add NBAWeb/data_feed/projections.csv
+          git commit -m "Auto-update: Daily NBA Projections" || echo "No changes to commit"
+          git push

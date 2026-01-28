@@ -204,12 +204,15 @@ final_projections <- predict_input %>%
   ) %>%
   arrange(desc(Proj_PTS))
 
-# Export to Django website data folder
-output_dir <- "C:/Users/User/Documents/NBA Projections/NBAWeb/NBAWeb/data_feed"
+# DYNAMIC PATH FOR GITHUB ACTIONS
+current_dir <- getwd()
+
+# Note: I use file.path to ensure it works on both Windows and Linux
+output_dir <- file.path(current_dir, "NBAWeb", "data_feed")
 
 if (!dir.exists(output_dir)) dir.create(output_dir, recursive = TRUE)
 
-write.csv(final_projections, file.path(output_dir, "projections.csv"), row.names = FALSE)
+output_file <- file.path(output_dir, "projections.csv")
+write.csv(final_projections, output_file, row.names = FALSE)
 
-cat(paste("\nSUCCESS! Data sent to:", output_dir, "\n"))
-cat("You can now run the Django server in Visual Studio 2022.\n")
+cat(paste("\nSUCCESS! Data sent to:", output_file, "\n"))

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36518.9 d17.14
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NBAWeb", "NBAWeb\NBAWeb.pyproj", "{8B6C2671-E5DF-4C3E-9EB5-42819B111483}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "NBAWeb", "NBAWeb.pyproj", "{8B6C2671-E5DF-4C3E-9EB5-42819B111483}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +20,6 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {442D0BB8-85F6-4874-9ED7-3594147350D2}
+		SolutionGuid = {F245D24E-A125-465C-971E-FD2CE577FF9D}
 	EndGlobalSection
 EndGlobal

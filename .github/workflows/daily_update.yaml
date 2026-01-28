@@ -1,10 +1,9 @@
 name: NBA Daily Projections Update
 
-
 on:
   schedule:
-    - cron: '0 10 * * *'  # 10:00 AM UTC
-  workflow_dispatch:
+    - cron: '0 08 * * *'  
+  workflow_dispatch:      
 
 permissions:
   contents: write
@@ -16,18 +15,27 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+
       - name: Setup R
         uses: r-lib/actions/setup-r@v2
         with:
-          r-version: '4.3.1'
-      - name: Install R Dependencies
+          r-version: 'release'
+
+      - name: Install Linux System Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libcurl4-openssl-dev libssl-dev libxml2-dev
+
+      - name: Install R Packages
         run: |
           install.packages("pacman")
+          install.packages("hoopR")  # Install explicitly to catch errors
           library(pacman)
-          p_load(hoopR, dplyr, tidyr, lubridate, knitr, writexl, stringr, ranger, zoo, tibble, rvest)
+          p_load(dplyr, tidyr, lubridate, knitr, writexl, stringr, ranger, zoo, tibble, rvest)
         shell: Rscript {0}
+
       - name: Run NBA Projections Script
-        run: Rscript "NBA Projections.R"
+        run: Rscript "NBA Projections.R"  
 
       - name: Commit and Push
         run: |

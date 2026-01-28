@@ -151,17 +151,26 @@ season_avgs <- historical_cutoff %>%
   group_by(athlete_display_name) %>%
   summarise(Season_PTS = mean(points))
 
-# FETCH INJURY REPORT 
-cat("Fetching injury report...\n")
-# Fetch the ESPN injury report
-injury_report <- hoopR::espn_nba_injuries() %>%
-  # Filter for players listed as "Out" or likely to miss
-  filter(grepl("Out|Injured|Surgery", status, ignore.case = TRUE)) %>% 
-  select(athlete_display_name = athlete_name) %>%
-  distinct()
+
+# Scrapping
+cat("Fetching injury report from ESPN...\n")
+
+injury_url <- "https://www.espn.com/nba/injuries"
+
+injury_report <- tryCatch({
+  read_html(injury_url) %>%
+    html_table() %>%
+    bind_rows() %>%
+    select(NAME, STATUS) %>%
+    rename(athlete_display_name = NAME, status = STATUS) %>%
+    filter(grepl("Out|Surgery|Indefinitely", status, ignore.case = TRUE)) %>%
+    distinct()
+}, error = function(e) {
+  cat("Warning: Could not fetch injury report. Proceeding without injury filter.\n")
+  return(data.frame(athlete_display_name = character(), status = character()))
+})
 
 cat(paste("Found", nrow(injury_report), "injured players to exclude.\n"))
-
 
 # Build prediction dataset for players in today's games
 predict_input <- latest_info %>%
@@ -189,6 +198,7 @@ predict_input <- latest_info %>%
   mutate(opponent = as.factor(opponent), Pos = as.factor(Pos), Missing_Production = 0) %>%
   filter(opponent %in% levels(train_data$opponent),
          L5_Mins >= MIN_AVG_MINUTES,
+         # EXCLUDE INJURED PLAYERS
          !athlete_display_name %in% injury_report$athlete_display_name) %>%
   ungroup()
 

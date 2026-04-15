@@ -1,27 +1,36 @@
 "athlete_display_name","team_abbreviation","opponent","Proj_PTS","L5_PTS","Proj_REB","L5_REB","Proj_AST","L5_AST"
-"Deni Avdija","POR","PHX",28.6,28.2,7,5.6,6.2,7
-"Devin Booker","PHX","POR",26,30.8,4.2,4,6.6,6.8
-"Jrue Holiday","POR","PHX",25.2,18.2,5.3,6.2,6.1,6.6
-"Jaime Jaquez Jr.","MIA","CHA",23.9,20.8,5.7,3.2,5.6,4.8
-"LaMelo Ball","CHA","MIA",21.9,27,4.5,5.2,6.5,7.4
-"Brandon Miller","CHA","MIA",21.8,18,5.2,3.6,2.6,2
-"Bam Adebayo","MIA","CHA",21,18,10.6,10,6.5,5.8
-"Scoot Henderson","POR","PHX",20.7,15.2,4.4,2,4.3,3
-"Dillon Brooks","PHX","POR",20.1,15.6,4.6,3,4.5,2.2
-"Andrew Wiggins","MIA","CHA",19.2,13,4.9,2.6,4.5,2.6
-"Kel'el Ware","MIA","CHA",19.1,12.8,9,9.2,4.5,1.8
-"Miles Bridges","CHA","MIA",18.7,14.8,7.2,7,4.4,3.4
-"Coby White","CHA","MIA",18.4,15.4,4.7,2,5.1,2.2
-"Donovan Clingan","POR","PHX",17.1,12.8,12.8,11,3.7,2
-"Kon Knueppel","CHA","MIA",17,13.6,4.5,4.6,4.3,3.6
-"Toumani Camara","POR","PHX",14.3,18.2,4.9,3.6,2.6,2.4
-"Kasparas Jakucionis","MIA","CHA",13.6,7.6,4.2,2.4,4.8,4.2
-"Grayson Allen","PHX","POR",13.4,9,3.2,3.4,2.2,1.4
-"Matisse Thybulle","POR","PHX",13.1,7.6,3.5,1.8,3.5,1.2
-"Robert Williams III","POR","PHX",13,7,11.1,8.4,3.2,1.2
-"Royce O'Neale","PHX","POR",12.5,6.8,4.6,3.4,3.2,1.2
-"Ryan Kalkbrenner","CHA","MIA",11.4,5.2,7.9,5,2.5,1
-"Kris Murray","POR","PHX",11.2,5,4.6,3,3.3,1.6
-"Moussa Diabate","CHA","MIA",11,5.2,7.2,7.8,4.4,3
-"Sion James","CHA","MIA",7.5,6,3.8,4.8,1.8,2.2
-"Oso Ighodaro","PHX","POR",6.3,5.6,5.2,5.2,1.4,2
+"Joel Embiid","PHI","ORL",27.7,28.6,10.5,8.8,6,4
+"Kawhi Leonard","LAC","GS",27.3,25.6,6.2,6.4,3.5,3.8
+"Paolo Banchero","ORL","PHI",23.3,22.2,8.5,9.6,5.6,6.6
+"Tyrese Maxey","PHI","ORL",22.3,23,4,3.4,4.4,4
+"Paul George","PHI","ORL",21.8,15,5.4,4.6,4.4,2.6
+"John Collins","LAC","GS",21.4,13.4,6.4,6.2,4.3,1.2
+"Darius Garland","LAC","GS",20,16.2,3.6,2.6,5.1,5.2
+"Brook Lopez","LAC","GS",18.6,12.4,9,6.6,3.6,1.4
+"Kobe Sanders","LAC","GS",18.6,12,4.6,2,4,1.4
+"VJ Edgecombe","PHI","ORL",17.6,15.6,6.5,7.2,5.5,5.6
+"Desmond Bane","ORL","PHI",16.8,16,3.6,3.2,3.5,3.2
+"Franz Wagner","ORL","PHI",16.7,18.2,4.1,3,2.4,2
+"Quentin Grimes","PHI","ORL",16.6,9.8,4.1,2.6,3.4,1.4
+"LJ Cryer","GS","LAC",16.4,9.8,4.8,1,4.4,1.8
+"Pat Spencer","GS","LAC",16.4,8.4,4,2.2,4.7,3.8
+"Charles Bassey","GS","LAC",15.9,10.6,9.1,7.2,3.5,1
+"De'Anthony Melton","GS","LAC",15.5,10,4,3,4.5,3.2
+"Bennedict Mathurin","LAC","GS",15.2,8.8,4.6,4.6,4.9,3.8
+"Brandin Podziemski","GS","LAC",15.1,19,2.6,2.2,2.8,2
+"Wendell Carter Jr.","ORL","PHI",15,8.6,8.4,5.8,3,1.4
+"Jordan Miller","LAC","GS",14.7,12.4,4.4,3.2,4.9,3.8
+"Jalen Suggs","ORL","PHI",14.4,13.8,4,3.4,5.6,6.2
+"Tristan da Silva","ORL","PHI",14,7.2,4,3.6,3.9,2.6
+"Jamal Cain","ORL","PHI",13.5,8.2,4.4,3.8,3.9,1.2
+"Isaiah Jackson","LAC","GS",13.3,9,5.4,5.2,3.4,1.4
+"Yanic Konan Niederhauser","LAC","GS",13.1,8.2,7.5,6.2,2.7,0
+"Goga Bitadze","ORL","PHI",12.9,9.8,8,9,4.4,1.8
+"Andre Drummond","PHI","ORL",12.6,7.2,9.3,9.8,3.6,2.4
+"Dominick Barlow","PHI","ORL",12.6,5,5.2,4.8,2.2,0.8
+"Gary Payton II","GS","LAC",12.6,9.6,4.3,2.6,3.9,1.2
+"Kelly Oubre Jr.","PHI","ORL",12.4,10,5.1,5.6,1.8,0.8
+"Jevon Carter","ORL","PHI",12.3,6.4,4.7,2.4,3.1,1.6
+"Bradley Beal","LAC","GS",9.6,8.8,1.8,0.8,2.2,2
+"Derrick Jones Jr.","LAC","GS",9.6,7.6,4.7,4.8,1.1,1
+"Kris Dunn","LAC","GS",6.6,5.4,2.2,4,3.1,3.4

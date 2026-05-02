@@ -1,46 +1,15 @@
 "athlete_display_name","team_abbreviation","opponent","Proj_PTS","L5_PTS","Proj_REB","L5_REB","Proj_AST","L5_AST"
-"Cade Cunningham","DET","ORL",29.3,32.6,4.6,5.8,7.2,7
-"RJ Barrett","TOR","CLE",28.8,24.4,7.1,7.2,4.2,3.8
-"Donovan Mitchell","CLE","TOR",26.5,23.2,4.9,5.2,4.4,3.6
-"Tobias Harris","DET","ORL",25.1,19.8,7.3,7.6,3.2,1.4
-"Alperen Sengun","HOU","LAL",24.9,21,11.3,10,6.5,5.4
-"Desmond Bane","ORL","DET",22.7,18.8,4.7,5.4,2.2,1.8
-"Jabari Smith Jr.","HOU","LAL",22.4,19.2,7.1,7.8,3.1,1.6
-"LeBron James","LAL","HOU",22.2,22.2,7.2,7.2,7.7,8.4
-"Marcus Smart","LAL","HOU",22.1,16.2,4.6,3,5.9,6.4
-"Amen Thompson","HOU","LAL",22,19.4,6.1,6.8,6.6,6.2
-"Rui Hachimura","LAL","HOU",21.8,14.8,5.8,3.6,2.5,1
-"James Harden","CLE","TOR",21.7,22,4,4.4,5.1,6.2
-"Franz Wagner","ORL","DET",21.6,17,6,5.8,4.3,4
-"Paolo Banchero","ORL","DET",21.3,25.8,8.3,8.8,5.3,6.4
-"Brandon Ingram","TOR","CLE",20,12,4.8,3.2,3.6,2.2
-"Scottie Barnes","TOR","CLE",20,24,7.3,5.4,6.9,8
-"Tari Eason","HOU","LAL",19.9,13.8,6,7,3,1.6
-"Collin Murray-Boyles","TOR","CLE",19.5,15.2,6,6.8,4,2.4
-"Deandre Ayton","LAL","HOU",18.3,12.8,9.3,9.8,2.5,1
-"Luke Kennard","LAL","HOU",18,14.4,5.2,4.4,3.5,3
-"Evan Mobley","CLE","TOR",17.7,17.6,10.9,7.8,4.2,3.4
-"Jalen Suggs","ORL","DET",16.6,13,3.5,3.4,3.8,3.6
-"Immanuel Quickley","TOR","CLE",16.5,8.8,3.7,3.2,4.3,4.4
-"Jarrett Allen","CLE","TOR",15.9,8.8,10.1,6.4,1.9,0.6
-"Reed Sheppard","HOU","LAL",15.5,12.6,2.6,1.2,5.4,5.4
-"Wendell Carter Jr.","ORL","DET",14.5,11,9.5,8.8,4.1,3.2
-"Duncan Robinson","DET","ORL",13.6,9.6,4.3,2,3.7,2.2
-"Ja'Kobe Walter","TOR","CLE",13.4,8.2,3.3,3,2.7,1.6
-"Jalen Duren","DET","ORL",13.3,10.2,9.8,8.4,3.3,2.2
-"Jakob Poeltl","TOR","CLE",12.7,7.6,9.4,6.2,3.3,1.8
-"Josh Okogie","HOU","LAL",12.5,5.2,3.4,2,2.2,0.8
-"Jaxson Hayes","LAL","HOU",11.9,4.8,6.2,2.4,2.3,0.4
-"Sam Merrill","CLE","TOR",11.8,7.6,3.1,1.8,2.7,1
-"Tristan da Silva","ORL","DET",11.6,3.8,3.9,2.8,2.2,0.2
-"Jamal Cain","ORL","DET",11.5,4.8,4.1,3.2,2.1,0.2
-"Isaiah Stewart","DET","ORL",11.5,5.8,5.4,4,1.7,0.2
-"Max Strus","CLE","TOR",11.4,10.8,4.2,4.6,1.8,1.6
-"Dean Wade","CLE","TOR",11,5.4,4.5,4.2,2.2,0.6
-"Anthony Black","ORL","DET",10.5,8.2,3,2.8,1.8,1.6
-"Ausar Thompson","DET","ORL",10,9.6,6.6,9.4,3.4,2.4
-"Jamal Shead","TOR","CLE",9.2,8.4,2.6,2,3.5,4.4
-"Jaylon Tyson","CLE","TOR",8.2,7,1.8,2,1.5,1.6
-"Sandro Mamukelashvili","TOR","CLE",7.8,5.4,4.9,6.2,1.7,1.2
-"Lonzo Ball","CLE","TOR",7.5,2.4,3.9,4.6,2.8,2.4
-"Javonte Green","DET","ORL",5.4,4.2,3.1,2.8,0.8,0.6
+"Joel Embiid","PHI","BOS",28.8,26.2,12.1,9.8,6.8,6
+"Jaylen Brown","BOS","PHI",25.5,24.2,5.3,5.4,3.9,3.2
+"Tyrese Maxey","PHI","BOS",24.5,27.4,4.2,4.4,5.8,6.2
+"Jayson Tatum","BOS","PHI",22.8,23,9.4,10.6,6.9,6.8
+"Payton Pritchard","BOS","PHI",20.8,15.4,5.7,3.6,5.3,4.6
+"Paul George","PHI","BOS",20.5,18.4,6,4.2,4.4,3.8
+"Quentin Grimes","PHI","BOS",13.4,8,4.5,2.8,4.2,2
+"Derrick White","BOS","PHI",13.2,8.4,3,2.8,2.7,2.4
+"Sam Hauser","BOS","PHI",13.2,6.2,4.7,4,2.7,0.6
+"VJ Edgecombe","PHI","BOS",13.2,14,6.5,7.8,2.9,2.8
+"Neemias Queta","BOS","PHI",13,7,10.7,9.2,2.3,0.4
+"Nikola Vucevic","BOS","PHI",13,6.8,6,4,3.2,2.2
+"Andre Drummond","PHI","BOS",11.4,6.2,6.6,5,2.2,0.6
+"Kelly Oubre Jr.","PHI","BOS",11.4,9.8,5.3,6,1.8,0.8
